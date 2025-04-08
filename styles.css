@@ -7,7 +7,7 @@
 body {
   font-family: 'Inter', sans-serif;
   background-color: #f4f4f4;
-  color: #333;
+  color: #333; /* Set text color to dark gray for contrast */
   overflow-x: hidden;
 }
 
@@ -27,7 +27,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-  color: #fff;
+  color: #fff; /* White text on black background for navbar */
   text-decoration: none;
   font-weight: bold;
 }
@@ -36,7 +36,7 @@ header nav ul li a {
   background: url('path/to/hero-image.jpg') no-repeat center center;
   background-size: cover;
   height: 100vh;
-  color: #fff;
+  color: #fff; /* Ensure white text on dark background */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,6 +89,8 @@ button, a {
 .about, .projects, .contact {
   padding: 50px 20px;
   text-align: center;
+  background-color: #fff; /* Set a white background for content sections */
+  color: #333; /* Set text color to dark gray for visibility */
 }
 
 .project-grid {
@@ -109,7 +111,7 @@ button, a {
 
 footer {
   background-color: #000;
-  color: #fff;
+  color: #fff; /* Ensure white text on black background */
   padding: 20px;
   text-align: center;
 }
