@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: #000;
+  padding: 1rem;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul li {
+  margin: 0 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  background: url('path/to/hero-image.jpg') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin: 20px 0;
+}
+
+button a {
+  padding: 10px 20px;
+  background-color: #ffca28;
+  color: #000;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+button:hover, a:hover {
+  background-color: #ffca28;
+  color: #fff;
+  cursor: pointer;
+}
+
+button, a {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Fade-in animation */
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Initially hide sections with opacity and transform */
+.about, .projects, .contact {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.about, .projects, .contact {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.project-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.project-item {
+  width: 250px;
+  text-align: left;
+}
+
+.project-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
